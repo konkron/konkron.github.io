@@ -114,21 +114,25 @@
 						<div class="inner">
 							<h2 class="major">Kontakt oss</h2>
 							<p>Dersom du har noen spørsmål angående våre tjenester, må du gjerne sende en mail til <a href="mailto:kontakt@konkron.com">kontakt@konkron.com</a>, eller bruke skjemaet nedenfor.</p>
-							<form method="post" action="#">
+							<form method="post" action="sendmail.php" enctype="text/plain">
 								<div class="field">
-									<label for="name">Name</label>
+									<label for="name">Navn</label>
 									<input type="text" name="name" id="name" />
 								</div>
 								<div class="field">
-									<label for="email">Email</label>
+									<label for="email">Epost</label>
 									<input type="email" name="email" id="email" />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
+									<label for="title">Tittel</label>
+									<input type="text" name="title" id="title" />
+								</div>
+								<div class="field">
+									<label for="message">Melding</label>
 									<textarea name="message" id="message" rows="4"></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send" /></li>
 								</ul>
 							</form>
 							<ul class="contact">
